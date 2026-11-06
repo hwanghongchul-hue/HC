@@ -1,0 +1,6 @@
+{
+  "name": "페이스랩 20m — 중등 체육 셔틀런 학습·측정 플랫폼",
+  "description": "중학생을 위한 20m 왕복오래달리기(셔틀런) 기초 이론, 호흡·턴 전술, Web Audio API 공식 페이스 측정기 및 실시간 학급 기록 관리 웹 애플리케이션",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

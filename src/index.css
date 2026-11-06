@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --bg-canvas: #F8F9FA;
+    --bg-surface: #FFFFFF;
+    --border-subtle: #E9ECEF;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --accent-primary: #0284C7;
+    --accent-emerald: #059669;
+  }
+
+  .dark {
+    --bg-canvas: #0B0F19;
+    --bg-surface: #151C2C;
+    --border-subtle: #232E44;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --accent-primary: #38BDF8;
+    --accent-emerald: #34D399;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    transition: background-color 180ms cubic-bezier(0.16, 1, 0.3, 1), color 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.surface-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
+}
+
+.dark .surface-card {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.24);
+}
